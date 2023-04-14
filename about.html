@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About - John Smith</title>
+    <link rel="icon" type="icon" href="/images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+    <script crossorigin="anonymous" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+            src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script type="text/javascript"></script>
+    <script>       $(function () {
+        $('#header').load('/partials/header.html');
+    });   </script>
+</head>
+
+<body>
+<div id="header"></div>
+
+<div class="about-container">
+
+    <div class="content-wrapper">
+        <div class="my-photo">
+            <img src="https://www.4dface.io/wp-content/uploads/2018/10/4DFM_sample2.jpg"></img>
+        </div>
+        <div class="about-me">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis semper dui, quis fermentum
+            nulla dignissim vel. In ac nulla quis magna porttitor dignissim non blandit mauris. In dapibus, leo id
+            mattis rhoncus, ligula purus accumsan tellus, ut mollis arcu sapien quis purus. Morbi luctus malesuada
+            quam et ullamcorper. Curabitur nibh felis, eleifend nec libero et, congue placerat mi. Nulla sit amet
+            risus dolor. Nulla vestibulum nec neque vitae consectetur. Sed quis turpis nibh. Proin arcu dolor,
+            porttitor nec sem sit amet, ultricies ornare mauris. Praesent blandit nec ligula vitae scelerisque.
+            Phasellus posuere leo justo, eu efficitur lectus posuere ut. Phasellus ac accumsan libero.
+
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis semper dui, quis
+                fermentum
+                nulla dignissim vel. In ac nulla quis magna porttitor dignissim non blandit mauris. In dapibus, leo
+                id
+                mattis rhoncus, ligula purus accumsan tellus, ut mollis arcu sapien quis purus. Morbi luctus
+                malesuada
+                quam et ullamcorper. Curabitur nibh felis, eleifend nec libero et, congue placerat mi. Nulla sit
+                amet
+                risus dolor. Nulla vestibulum nec neque vitae consectetur. Sed quis turpis nibh. Proin arcu dolor,
+                porttitor nec sem sit amet, ultricies ornare mauris. Praesent blandit nec ligula vitae scelerisque.
+                Phasellus posuere leo justo, eu efficitur lectus posuere ut. Phasellus ac accumsan libero.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <p>&copy;
+            <script>document.write(/\d{4}/.exec(Date())[0])</script>
+            John Smith
+        </p>
+    </div>
+</footer>
+
+<script>
+    // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.getElementById("navbar").style.padding = "30px 10px";
+            document.getElementById("logo").style.fontSize = "25px";
+        } else {
+            document.getElementById("navbar").style.padding = "80px 10px";
+            document.getElementById("logo").style.fontSize = "35px";
+        }
+    }
+</script>
+
+
+</body>
+
+</html>
